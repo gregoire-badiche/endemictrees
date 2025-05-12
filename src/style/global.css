@@ -1,23 +1,37 @@
-* {
-    font-family: 'Segoe UI', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --background-blue: #9ddaf9;
-    --background-white: #fff;
-    --foreground-dark: #000;
+    --background-blue: #b9daeb;
+    --background-white: #f2e8cf;
+    --foreground-dark: #1f4100;
     --basis-radius: 20px;
+    --green-1: #386641;
+    --green-2: #647736;
+    --green-3: #6a994e;
+    --h1-font-size: 60px;
 }
 
-html, body {
+@media (max-width: 600px) {
+    :root {
+        --h1-font-size: 30px;
+    }
+}
+
+* {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--foreground-dark);
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: var(--background-blue);
 }
 
-header > nav {
+header>nav {
     margin: 20px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     background-color: var(--background-white);
     border-radius: var(--basis-radius);
     text-decoration: none;
@@ -27,13 +41,42 @@ header > nav {
 header * {
     text-decoration: inherit;
     color: inherit;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
 }
 
-header > nav > a:not(:first-child) {
+header>nav>a:not(:first-child) {
     margin-left: 30px;
-    text-decoration: underline;
 }
 
-.endemic-trees, .endemic-trees * {
+header .endemic-trees {
+    font-size: 20px;
+}
+
+.endemic-trees,
+.endemic-trees * {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 900;
+}
+
+.endemic-trees-letter {
+    display: inline-block;
+    margin: 0 .07em;
+    transition: all 100ms;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
 }
