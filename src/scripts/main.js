@@ -13,12 +13,17 @@ window.onload = () => {
             newEl.style.color = `var(--green-${c})`;
             newEl.innerHTML = letter;
             newEl.style.transform = `rotate(${r}deg)`;
-            newEl.onmouseover = e => {
+            const change = () => {
                 const c = Math.round(Math.random() * 2) + 1;
                 const r = possibleAngles[Math.round(Math.random() * (possibleAngles.length - 1))];
                 newEl.style.color = `var(--green-${c})`;
                 newEl.style.transform = `rotate(${r}deg)`;
-            }
+                const rt = Math.round(Math.random() * 2500) + 500;
+                setTimeout(change, rt);
+            };
+
+            change();
+
             el.appendChild(newEl);
         });
     });
