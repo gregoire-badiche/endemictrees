@@ -1,0 +1,39 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --background-blue: #9ddaf9;
+    --background-white: #fff;
+    --foreground-dark: #000;
+    --basis-radius: 20px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-blue);
+}
+
+header > nav {
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: var(--background-white);
+    border-radius: var(--basis-radius);
+    text-decoration: none;
+    color: var(--foreground-dark);
+}
+
+header * {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+header > nav > a:not(:first-child) {
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+.endemic-trees, .endemic-trees * {
+    font-weight: 900;
+}
