@@ -1,0 +1,72 @@
+/*
+
+.tree {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 40px auto;
+}
+
+
+.tree-trunk {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 140px;
+    background: linear-gradient(to bottom, #8d5524 60%, #c68642 100%);
+    border-radius: 20px 20px 10px 10px;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+
+.tree-leaves {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 220px;
+    height: 180px;
+    background: radial-gradient(circle at 60% 40%, #4caf50 60%, #388e3c 100%);
+    border-radius: 60% 60% 50% 50% / 70% 70% 40% 40%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 12px 32px rgba(34,139,34,0.18);
+}
+
+.tree-leaves-left {
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle at 40% 60%, #66bb6a 60%, #388e3c 100%);
+    border-radius: 60% 70% 60% 70%;
+    z-index: 2;
+}
+
+
+.tree-leaves-right {
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle at 60% 40%, #81c784 60%, #388e3c 100%);
+    border-radius: 70% 60% 70% 60%;
+    z-index: 2;
+}
+
+
+.tree-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 24px;
+    background: radial-gradient(ellipse at center, #00000022 60%, transparent 100%);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}*/
