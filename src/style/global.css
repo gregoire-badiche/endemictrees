@@ -36,6 +36,10 @@ header>nav {
     border-radius: var(--basis-radius);
     text-decoration: none;
     color: var(--foreground-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header * {
@@ -47,9 +51,9 @@ header * {
     font-weight: 600;
 }
 
-header>nav>a:not(:first-child) {
+/* header>nav>a:not(:first-child) {
     margin-left: 30px;
-}
+} */
 
 header .endemic-trees {
     font-size: 20px;
@@ -78,7 +82,6 @@ header .endemic-trees {
 
 .nav-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -92,9 +95,8 @@ header .endemic-trees {
 
 .nav-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
 }
 
 /* Responsive */
