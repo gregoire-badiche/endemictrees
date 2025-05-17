@@ -55,6 +55,11 @@ header * {
     margin-left: 30px;
 } */
 
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
 header .endemic-trees {
     font-size: 20px;
 }
@@ -65,6 +70,7 @@ header .endemic-trees {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 900;
+    text-decoration: none;
 }
 
 .endemic-trees-letter {
@@ -78,6 +84,13 @@ header .endemic-trees {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.size-capped {
+    max-width: 840px;
+    margin: 0 30px;
+    box-sizing: content-box;
 }
 
 .nav-header {
