@@ -18,7 +18,7 @@
 
 #main-picture {
     width: 300px;
-    background: url('/images/chartreuse8.jpg');
+    background: url('images/chartreuse8.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
