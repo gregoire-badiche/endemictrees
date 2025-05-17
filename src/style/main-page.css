@@ -1,0 +1,35 @@
+#main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    width: 100vw;
+}
+
+#main-content>* {
+    margin: 30px;
+}
+
+#main-paragraph {
+    margin-right: 40px;
+    max-width: 400px;
+}
+
+#main-picture {
+    width: 300px;
+    background: url('/images/chartreuse8.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    transform: rotate(5deg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* @media (max-width: 600px) {
+    #main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+} */
