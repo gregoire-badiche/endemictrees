@@ -11,11 +11,11 @@
     --h1-font-size: 60px;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     :root {
         --h1-font-size: 30px;
     }
-} */
+}
 
 * {
     font-family: 'Segoe UI', sans-serif;
