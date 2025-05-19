@@ -33,10 +33,9 @@ window.onload = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("nav-toggle");
-    const links = document.getElementById("nav-links");
 
     toggleBtn.addEventListener("click", () => {
-        links.classList.toggle("show");
+        document.querySelector("#nav-links").toggleAttribute("show");
     });
 });
 

@@ -4,3 +4,15 @@ iframe {
     width: 600px;
     height: 400px;
 }
+
+section {
+    min-height: calc(100vh - 98px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 20px;
+}
