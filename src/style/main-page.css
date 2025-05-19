@@ -1,3 +1,7 @@
+.center {
+    min-height: calc(100vh - 98px);
+}
+
 #main-content {
     display: flex;
     flex-direction: row;
@@ -17,6 +21,7 @@
 }
 
 #main-picture {
+    transition: all .1s;
     width: 300px;
     background: url('../images/chartreuse8.jpg');
     background-position: 50% 50%;
