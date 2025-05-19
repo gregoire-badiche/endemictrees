@@ -47,9 +47,12 @@
 
 .about-profiles {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 32px;
     margin: 18px 0 0 0;
+    width: 100%;
 }
 
 .profile-pic {
@@ -71,5 +74,10 @@
     .about-hero, .about-content {
         max-width: 100%;
         padding: 0 8px;
+    }
+
+    .about-profiles {
+        flex-direction: row;
+        gap: 16px;
     }
 }
