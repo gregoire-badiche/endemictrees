@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>But why?</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/but-why.css">
+    <link rel="stylesheet" href="../style/statistics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/statistics.js"></script>
     <link rel="icon" href="../images/icon.png">
 </head>
 <body>
@@ -27,7 +29,43 @@
             </div>
         </nav>
     </header>
-    <section></section>
+    <section>
+        <div class="stat-vertical-container">
+            <div class="stat-card">
+                <div class="stat-card-flex">
+                    <div class="stat-image-container">
+                        <img src="../images/chartreuse1.jpg" alt="Statistics illustration 1" class="stat-image">
+                    </div>
+                    <div class="stat-graph-container">
+                        <h3 class="stat-graph-title">Évolution annuelle par type</h3>
+                        <canvas id="stat-line" width="400" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-flex">
+                    <div class="stat-graph-container">
+                        <h3 class="stat-graph-title">Répartition des espèces</h3>
+                        <canvas id="stat-pie" width="400" height="250"></canvas>
+                    </div>
+                    <div class="stat-image-container">
+                        <img src="../images/chartreuse2.jpg" alt="Statistics illustration 2" class="stat-image">
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-flex">
+                    <div class="stat-image-container">
+                        <img src="../images/chartreuse3.jpg" alt="Statistics illustration 3" class="stat-image">
+                    </div>
+                    <div class="stat-graph-container">
+                        <h3 class="stat-graph-title">Nombre d'arbres plantés par mois</h3>
+                        <canvas id="stat-graph" width="400" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         Copyright © 2025 Grégoire Badiche & Valentin Auffray
     </footer>
