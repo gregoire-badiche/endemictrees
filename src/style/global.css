@@ -99,6 +99,10 @@ header .endemic-trees {
     transition: all 100ms;
 }
 
+section {
+    padding: 30px;
+}
+
 .center {
     display: flex;
     flex-direction: column;
