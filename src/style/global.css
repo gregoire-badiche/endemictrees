@@ -27,6 +27,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-blue);
+    overflow-x: hidden;
 }
 
 body {
@@ -97,6 +98,10 @@ header .endemic-trees {
     display: inline-block;
     margin: 0 .07em;
     transition: all 100ms;
+}
+
+section {
+    padding: 30px;
 }
 
 .center {

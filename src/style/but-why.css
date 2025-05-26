@@ -1,0 +1,43 @@
+section {
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.primary {
+    width: 300px;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary {
+    width: 400px;
+    max-width: 90vw;
+}
+
+#deforestation {
+    position: relative;
+}
+
+#dirt {
+    position: absolute;
+    border-radius: 20px;
+}
+
+.leaf {
+    position: absolute;
+}
