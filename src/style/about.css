@@ -1,5 +1,3 @@
-/* Mise en page inspirée de main-page.css, centrée et aérée pour le texte de la page About */
-
 .about-hero {
     display: flex;
     flex-direction: column;
@@ -70,6 +68,67 @@
     border-color: var(--green-2);
 }
 
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-3);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #0001;
+    padding: 12px 24px 28px 24px;
+    margin: 48px auto 20px auto;
+    max-width: 420px;
+}
+
+.newsletter h2 {
+    color: #FFF;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    flex: 1 1 0;
+    padding: 12px 16px;
+    border: 1.5px solid var(--green-3);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #f8fafb;
+}
+
+.newsletter input[type="email"]:focus {
+    border-color: var(--green-1);
+}
+
+.newsletter button[type="submit"] {
+    padding: 12px 22px;
+    background: var(--green-1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.newsletter button[type="submit"]:hover {
+    background: var(--green-1);
+    transform: translateY(-2px) scale(1.04);
+}
+
 @media (max-width: 600px) {
     .about-hero, .about-content {
         max-width: 100%;
@@ -79,5 +138,14 @@
     .about-profiles {
         flex-direction: row;
         gap: 16px;
+    }
+
+    .newsletter {
+        max-width: 98vw;
+        padding: 18px 4px 14px 4px;
+    }
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
     }
 }
