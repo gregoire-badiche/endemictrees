@@ -1,0 +1,27 @@
+{
+    "annual_evolution": {
+        "years": ["2019", "2020", "2021", "2022", "2023"],
+        "plots": [
+            {
+                "label": "Conifer",
+                "data": [2, 4, 7, 10, 12]
+            },
+            {
+                "label": "Deciduous",
+                "data": [3, 5, 6, 8, 11]
+            },
+            {
+                "label": "Unspecified",
+                "data": [0, 0, 1, 2, 2]
+            }
+        ]
+    },
+    "species_repartition": {
+        "labels": ["Oak", "Beech", "Fir", "Others"],
+        "data": [10, 15, 8, 7]
+    },
+    "trees_planted": {
+        "labels": ["Jan", "Feb", "Mar", "Apr"],
+        "data": [12, 19, 3, 5]
+    }
+}

@@ -1,29 +1,32 @@
-window.onload = function() {
+window.addEventListener('load', async function() {
     const lineCtx = document.getElementById('stat-line').getContext('2d');
+
+    const data = await fetch('../api/data.json').then(r => r.json()).catch(e => alert('Error while fetching data :('));
+
     new Chart(lineCtx, {
         type: 'line',
         data: {
-            labels: ['2019', '2020', '2021', '2022', '2023'],
+            labels: data.annual_evolution.years,
             datasets: [
                 {
-                    label: 'Conifère',
-                    data: [2, 4, 7, 10, 12],
+                    label: data.annual_evolution.plots[0].label,
+                    data: data.annual_evolution.plots[0].data,
                     fill: false,
                     borderColor: 'rgba(56, 102, 65, 1)',
                     backgroundColor: 'rgba(56, 102, 65, 0.3)',
                     tension: 0.3
                 },
                 {
-                    label: 'Feuillu',
-                    data: [3, 5, 6, 8, 11],
+                    label: data.annual_evolution.plots[1].label,
+                    data: data.annual_evolution.plots[1].data,
                     fill: false,
                     borderColor: 'rgba(106, 153, 78, 1)',
                     backgroundColor: 'rgba(106, 153, 78, 0.3)',
                     tension: 0.3
                 },
                 {
-                    label: 'Non spécifié',
-                    data: [0, 0, 1, 2, 2],
+                    label: data.annual_evolution.plots[2].label,
+                    data: data.annual_evolution.plots[2].data,
                     fill: false,
                     borderColor: 'rgba(200, 220, 180, 1)',
                     backgroundColor: 'rgba(200, 220, 180, 0.3)',
@@ -59,10 +62,10 @@ window.onload = function() {
     new Chart(pieCtx, {
         type: 'pie',
         data: {
-            labels: ['Chêne', 'Hêtre', 'Sapin', 'Autres'],
+            labels: data.species_repartition.labels,
             datasets: [{
-                label: 'Répartition des espèces',
-                data: [10, 15, 8, 7],
+                label: 'Species repartition',
+                data: data.species_repartition.data,
                 backgroundColor: [
                     'rgba(106, 153, 78, 0.7)',
                     'rgba(100, 119, 54, 0.7)',
@@ -89,10 +92,10 @@ window.onload = function() {
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+            labels: data.trees_planted.labels,
             datasets: [{
-                label: "Nombre d'arbres plantés",
-                data: [12, 19, 3, 5],
+                label: "Number of trees planted",
+                data: data.trees_planted.data,
                 backgroundColor: [
                     'rgba(106, 153, 78, 0.7)',
                     'rgba(100, 119, 54, 0.7)',
@@ -127,4 +130,4 @@ window.onload = function() {
             }
         }
     });
-};
+});
