@@ -57,7 +57,21 @@
     <section class="newsletter">
         <h2>STAY TUNED !</h2>
         <form>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="tel" name="phone" placeholder="Phone number" pattern="[0-9+\s\-]{7,}" required>
+            <input type="number" name="age" placeholder="Age" min="1" max="120" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <div class="newsletter-checkboxes">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I accept the <a href="#" id="terms-link">terms of use</a>
+                </label>
+                <label>
+                    <input type="checkbox" name="marketing">
+                    I agree to receive marketing announcements
+                </label>
+            </div>
             <button type="submit">Subscribe</button>
         </form>
     </section>
@@ -72,6 +86,13 @@
                     e.preventDefault();
                     alert('Thank you for subscribing to our newsletter!');
                     newsletterForm.reset();
+                });
+            }
+            const termsLink = document.getElementById('terms-link');
+            if (termsLink) {
+                termsLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    alert("You don't want to know... ^^'");
                 });
             }
         });
