@@ -28,6 +28,8 @@ Then open your browser and go to [http://localhost:8080](http://localhost:8080)
 
 Enjoy exploring the world of endemic trees!
 
+---
+
 ### Warning
 
 A lot of our content is AI generated as the project isn't graded on this part. We were evaluated on our coding quality and we did not had a lot of time to put in reaserches. Thanks for your understanding.
