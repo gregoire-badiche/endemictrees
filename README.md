@@ -5,6 +5,11 @@ Welcome to the Endemic Trees project! 🌳
 This website is dedicated to raising awareness about endemic tree species, their ecological importance, and the need for conservation. You'll find educational content, statistics, and interactive features to help you discover why planting the right trees matters.
 
 ---
+## How to access the website 
+
+click on the following link : [github.com/gregoire-badiche/endemictrees](https://github.com/gregoire-badiche/endemictrees)
+
+---
 
 ## How to run locally
 
