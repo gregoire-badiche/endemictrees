@@ -50,6 +50,14 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 header>nav {
     margin: 20px;
     padding: 15px 30px;

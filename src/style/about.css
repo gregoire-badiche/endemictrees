@@ -167,6 +167,15 @@
     transform: translateY(-2px) scale(1.04);
 }
 
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
     .about-hero, .about-content {
         max-width: 100%;
