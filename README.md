@@ -7,7 +7,7 @@ This website is dedicated to raising awareness about endemic tree species, their
 ---
 ## How to access the website 
 
-click on the following link : [github.com/gregoire-badiche/endemictrees](https://github.com/gregoire-badiche/endemictrees)
+click on the following link : [gregoire-badiche.github.io/endemictrees/](https://gregoire-badiche.github.io/endemictrees/)
 
 ---
 
